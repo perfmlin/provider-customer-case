@@ -1,0 +1,26 @@
+# Created by .ignore support plugin (hsz.mobi)
+### Gradle template
+.gradle
+gradle/
+gradle.properties
+gradlew
+gradlew.bat
+proguard-rules.pro
+gradle-app.setting
+build/
+#
+node_modules
+npm-debug.log
+# Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
+!gradle-wrapper.jar
+
+# Cache of project
+.gradletasknamecache
+
+# # Work around https://youtrack.jetbrains.com/issue/IDEA-116898
+# gradle/wrapper/gradle-wrapper.properties
+*.iml
+.idea
+local.properties
+.git
+.DS_Store
