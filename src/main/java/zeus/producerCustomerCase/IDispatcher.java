@@ -1,4 +1,4 @@
-package zeus.providerCustomerCase;
+package zeus.producerCustomerCase;
 
 /**
  * Created by AdminPerfmlin on 2016/10/12.

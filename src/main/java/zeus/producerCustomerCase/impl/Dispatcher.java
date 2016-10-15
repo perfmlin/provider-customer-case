@@ -1,8 +1,8 @@
-package zeus.providerCustomerCase.impl;
+package zeus.producerCustomerCase.impl;
 
-import zeus.providerCustomerCase.ICustomer;
-import zeus.providerCustomerCase.IDispatcher;
-import zeus.providerCustomerCase.IProducer;
+import zeus.producerCustomerCase.ICustomer;
+import zeus.producerCustomerCase.IDispatcher;
+import zeus.producerCustomerCase.IProducer;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,8 +1,8 @@
-package zeus.providerCustomerCase.impl;
+package zeus.producerCustomerCase.impl;
 
-import zeus.providerCustomerCase.IDispatcher;
-import zeus.providerCustomerCase.IProducer;
-import zeus.providerCustomerCase.Program;
+import zeus.producerCustomerCase.IDispatcher;
+import zeus.producerCustomerCase.IProducer;
+import zeus.producerCustomerCase.Program;
 
 import java.util.logging.Logger;
 

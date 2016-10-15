@@ -1,8 +1,8 @@
-package zeus.providerCustomerCase;
+package zeus.producerCustomerCase;
 
-import zeus.providerCustomerCase.impl.DataCustomer;
-import zeus.providerCustomerCase.impl.DataProducer;
-import zeus.providerCustomerCase.impl.Dispatcher;
+import zeus.producerCustomerCase.impl.DataCustomer;
+import zeus.producerCustomerCase.impl.DataProducer;
+import zeus.producerCustomerCase.impl.Dispatcher;
 
 import java.util.Random;
 

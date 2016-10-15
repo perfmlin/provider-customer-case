@@ -1,9 +1,8 @@
-package zeus.providerCustomerCase;
+package zeus.producerCustomerCase;
 
 /**
  * Created by AdminPerfmlin on 2016/10/12.
  */
-public interface ICustomer extends Runnable {
+public interface IProducer extends Runnable {
     void bind(IDispatcher dispatcher);
-
 }
