@@ -3,7 +3,10 @@ package zeus.producerCustomerCase.impl;
 import zeus.producerCustomerCase.*;
 import zeus.producerCustomerCase.exception.ReduceException;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Hashtable;
+import java.util.List;
+import java.util.UUID;
 import java.util.concurrent.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -168,6 +171,7 @@ public class SimpleDispatchService implements IDispatchService {
             TOutput out = _customer.reduce(_message);
 
             m_customerFutureList.remove(getId());
+
             return out;
         }
     }
@@ -184,13 +188,15 @@ public class SimpleDispatchService implements IDispatchService {
         }
     }
     private void waitingCustomers() {
-        for (Map.Entry<UUID, Future> entry : m_customerFutureList.entrySet()) {
-            try {
-                entry.getValue().get();
-            }catch (Exception ex){
 
+        while (!m_customerFutureList.isEmpty()) {
+            try {
+                Thread.sleep(10);
+            }catch (Exception ex){
+                ex.printStackTrace();
             }
         }
+
     }
     @Override
     public void report() {
