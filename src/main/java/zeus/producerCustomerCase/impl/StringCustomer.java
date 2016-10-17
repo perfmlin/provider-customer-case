@@ -54,7 +54,11 @@ public class StringCustomer implements ICustomer<String,String> {
             throw new ReduceException("消费错误", ex);
         }
         logger.info(String.format("消费完毕，耗时（%d)！", System.currentTimeMillis() - startAt));
-        return null;
+        StringBuilder sb = new StringBuilder();
+        rstList.forEach(rst->{
+            sb.append(rst);
+        });
+        return sb.toString();
     }
 
     private final class Worker implements Callable<String> {
